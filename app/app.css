@@ -1,0 +1,23 @@
+/* app css stylesheet */
+
+#body {
+  background-color: #666666;
+}
+#my-foto {
+  width: 55%;
+}
+.firstLetter {
+  color: #F1CA3A;
+}
+.headWords   {
+  color: #ffffff;
+  font-style: italic;
+  font-family: 'Existence Light', arial;
+  margin-left: 20%
+}
+h2.headWords  {
+ margin-top: -5%;
+}
+#header{
+  background-color: #484848;
+}
