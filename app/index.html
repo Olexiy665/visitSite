@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<head>
+<head xmlns="http://www.w3.org/1999/html">
   <meta charset="utf-8">
   <title>Олексій Кривоносов</title>
   <meta name="description" content="">
@@ -8,8 +8,13 @@
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
   <link href="http://allfont.ru/css/?fonts=existence-light" rel="stylesheet" type="text/css" />
-</head>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+
+  <script src="bower_components/foundation/js/foundation.min.js/"></script>
+  <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+  </head>
 <body id="body" ng-app="mainApp">
+
 
 <div class="medium-12 columns large-12 columns small-12 columns" id="header">
 
@@ -32,42 +37,22 @@
 </div>
 
 
-<div class="large-3 columns show-for-large-up ">
+<div class="large-3 columns medium-3 columns show-for-medium-up ">
   <ul class="side-nav">
-      <li><a href="#/" >Особиста інформація</a></li>
-      <li><a href="#/page1" >Освіта та навчання</a></li>
-      <li><a href="#/page2">ІТ-навички</a></li>
+      <li><a  class="button mNavButton" href="#/" >Особиста інформація</a></li>
+      <li><a  class="button mNavButton" href="#/education" >Освіта та навчання</a></li>
+      <li><a  class="button mNavButton" href="#/skills">ІТ-навички</a></li>
   </ul>
 </div>
 
 
 
 
-<div class="large-9 columns">
-<div class="off-canvas-wrap "  data-offcanvas>
-  <div class="inner-wrap">
-
-    <a class="left-off-canvas-toggle" href="#" >Menu</a>
-
-    <!-- Off Canvas Menu -->
-    <aside class="left-off-canvas-menu">
-      <!-- whatever you want goes here -->
-      <ul>
-        <li><a href="/home" >Особиста інформація</a></li>
-        <li><a href="/page1" >Освіта та навчання</a></li>
-        <li><a href="/page2">ІТ-навички</a></li>
-      </ul>
-    </aside>
-
-    <!-- main content goes here -->
-    <ng-view></ng-view>
-
-    <!-- close the off-canvas menu -->
-    <a class="exit-off-canvas"></a>
+<div class="large-9 columns medium-9 columns">
+<ng-view></ng-view>
 
   </div>
-</div>
-</div>
+
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
