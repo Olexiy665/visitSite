@@ -29,8 +29,12 @@ a.button.mNavButton {
 
 }
  a.button.mNavButton:hover {
-  background-color: #F1CA3A;
-   color: #484848;
+     z-index:1000;
+     box-shadow:rgba(0, 0, 0, 0.29) 0 16px 16px 0;
+     -webkit-box-shadow:rgba(0, 0, 0, 0.29) 0 16px 16px 0;
+     -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+     background-color: #F1CA3A;
+
 
 
 }
@@ -44,3 +48,80 @@ a.button.mNavButton {
    font-style: italic;
    font-family: 'Existence Light', arial;
  }
+ a.contacts {
+     color: #ffffff;
+     border-bottom: dashed 1px;
+ }
+ a.contacts:hover {
+     color:#F1CA3A;
+ }
+ a.contacts:focus {
+     color:#F1CA3A;
+ }
+ .fi-social-facebook,.fi-social-google-plus, .fi-social-github, .fi-social-skype {
+     font-size: 100px;
+     color:#F1CA3A;
+
+
+
+
+ }
+.fi-social-facebook:hover{
+    color: #3E5C9A;
+    text-shadow: 1px 1px 2px white,  0 0 5px white;
+    z-index: 1000;
+}
+.fi-social-google-plus:hover{
+    color:#DD4E41;
+    text-shadow: 1px 1px 2px white, 0 0 2px white;
+    z-index: 1000;
+}
+.fi-social-github:hover{
+    color:#0D2636;
+    text-shadow: 1px 1px 2px white, 0 0 2px white;
+    z-index: 1000;
+}
+.fi-social-skype:hover{
+    color:#00ADF3;
+    text-shadow: 1px 1px 2px white, 0 0 2px white;
+    z-index: 1000;
+}
+
+[angular-ripple] {
+    position: relative;
+    overflow: hidden;
+}
+.angular-ripple {
+    display: block;
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+.angular-ripple.animate {
+    animation: ripple 0.45s linear;
+}
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+a.active-tab {
+    width: 90%;
+    height: 4.5em;
+    background-color: #484848;
+    padding-top: 8%;
+    border-right: 8px solid #F1CA3A;
+
+}
+a.button.mNavButton.active-tab:hover {
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.29) 0 16px 16px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.29) 0 16px 16px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+    background-color: #F1CA3A;
+    border-right: 8px solid #484848;
+}
+

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 
-<head xmlns="http://www.w3.org/1999/html">
+<head xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <meta charset="utf-8">
   <title>Олексій Кривоносов</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="app.css">
+
   <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <link rel="stylesheet" href="bower_components/foundation-icon-fonts/foundation-icons.css">
   <link href="http://allfont.ru/css/?fonts=existence-light" rel="stylesheet" type="text/css" />
   <script src="bower_components/jquery/dist/jquery.js"></script>
 
   <script src="bower_components/foundation/js/foundation.min.js/"></script>
-  <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+    <link rel="stylesheet" href="app.css">
   </head>
 <body id="body" ng-app="mainApp">
 
@@ -37,11 +38,11 @@
 </div>
 
 
-<div class="large-3 columns medium-3 columns show-for-medium-up ">
+<div ng-controller="HighLightController"  class="large-3 columns medium-3 columns show-for-medium-up " >
   <ul class="side-nav">
-      <li><a  class="button mNavButton" href="#/" >Personal info</a></li>
-      <li><a  class="button mNavButton" href="#/education" >Education</a></li>
-      <li><a  class="button mNavButton" href="#/skills">IT-skills</a></li>
+      <li><a  class="button mNavButton" href="#/home" ng-class="{'active-tab': $route.current.activePage == 'home'}" >Personal info</a></li>
+      <li><a class="button mNavButton"  href="#/education"  ng-class="{'active-tab': $route.current.activePage == 'education'}" >Education</a></li>
+      <li><a  class="button mNavButton" href="#/skills" ng-class="{'active-tab': $route.current.activePage == 'skills'}" >IT-skills</a></li>
   </ul>
 </div>
 
@@ -55,7 +56,9 @@
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
+  <script src="js/app.js"></script>
+
+  <script src="bower_components/angular-ripple/angular-ripple.js"></script>
 
 
 </body>
