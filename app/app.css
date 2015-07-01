@@ -124,4 +124,14 @@ a.button.mNavButton.active-tab:hover {
     background-color: #F1CA3A;
     border-right: 8px solid #484848;
 }
-
+.hidden {
+    visibility: hidden;
+}
+.skill {
+    height: 120px;
+    background-color: #F1CA3A;
+    margin: 2% 0 2% 0;
+}
+.skill img {
+    margin-top: 2.5%;
+}
