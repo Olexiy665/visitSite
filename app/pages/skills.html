@@ -1,10 +1,10 @@
-
-    <div ng-repeat="skill in skills"
+    <input class="input-query" placeholder="Please, enter the skill name or knowledge level..." ng-model="searchParam">
+    <div ng-repeat="skill in skills | filter: searchParam"
 
          when-visible="animateElementIn"
          when-not-visible="animateElementOut"
          delay-percent="0.50"
-         class="hidden">
+        >
         <div class="skill" >
             <div >
            <div class="medium-3 columns large-3 large-3 columns small-3 columns"> <img ng-src="{{skill.imgUrl}}"></div>

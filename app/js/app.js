@@ -54,94 +54,94 @@ app.controller('SkillsController', function($scope){
     $scope.skills = [{
         'name':'AngularJS',
         'imgUrl':'./pictures/skills-logo/Angular-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 2.5/5'
 
 
     }, {
         'name':'Bower',
         'imgUrl':'./pictures/skills-logo/Bower-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 4/5'
     },{
         'name':'HTML5',
         'imgUrl':'./pictures/skills-logo/HTML5-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 4/5'
 
     },{
         'name':'JavaScript',
         'imgUrl':'./pictures/skills-logo/JS-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 3/5'
 
     },{
         'name':'jQuery',
         'imgUrl':'./pictures/skills-logo/JQuery-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 2.5/5'
 
     },{
         'name':'Foundation',
         'imgUrl':'./pictures/skills-logo/zurb-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 3/5'
 
     },{
         'name':'RequireJS',
         'imgUrl':'./pictures/skills-logo/RequireJS-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 2/5'
 
     },{
         'name':'NPM',
         'imgUrl':'./pictures/skills-logo/NPM-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 3/5'
 
     },{
         'name':'git',
         'imgUrl':'./pictures/skills-logo/git-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 4/5'
 
     },{
         'name':'Photoshop',
         'imgUrl':'./pictures/skills-logo/PS-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 4/5'
 
     },{
         'name':'Node.JS',
         'imgUrl':'./pictures/skills-logo/node.js-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 2.5/5'
 
     },{
         'name':'CSS',
         'imgUrl':'./pictures/skills-logo/Css-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 3.5/5'
 
     },{
         'name':'Java',
         'imgUrl':'./pictures/skills-logo/Java-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'have experience: 3/5'
 
     },{
         'name':'SailsJS',
         'imgUrl':'./pictures/skills-logo/SailsJs-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'familiar with: 2/5'
 
     },{
         'name':'D3js',
         'imgUrl':'./pictures/skills-logo/D3-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'familiar with: 1/5'
 
     },{
         'name':'Sass',
         'imgUrl':'./pictures/skills-logo/Sass-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'familiar with: 1/5'
     },{
         'name':'Less',
         'imgUrl':'./pictures/skills-logo/Less-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'familiar with: 1/5'
     },{
         'name':'PHP',
         'imgUrl':'./pictures/skills-logo/PHP-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'familiar with: 2/5'
     },{
         'name':'Python',
         'imgUrl':'./pictures/skills-logo/Python-logo.png',
-        'knowledgeLevel':''
+        'knowledgeLevel':'familiar with: 2.5/5'
     }
 
     ]

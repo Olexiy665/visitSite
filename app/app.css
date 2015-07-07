@@ -1,4 +1,4 @@
-/* app css stylesheet */
+
 html {
     overflow-x: hidden; }
 
@@ -219,4 +219,41 @@ a.button.mNavButton.active-tab:hover {
 .active-year-button {
     background-color: #F1CA3A;
     border: 1px solid #F1CA3A;
+}
+.input-query {
+width: 90%;
+    height: 50px;
+    margin-top: 14px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Existence Light', arial;
+
+}
+::-webkit-input-placeholder {
+
+    color: rgba(72, 72, 72, 0.70);
+    font-size: 1.2em;
+}
+:-moz-placeholder {
+    color:    #484848;
+    opacity:  1;
+}
+::-moz-placeholder {
+    color:    #484848;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #484848;
+}
+.my-modal {
+ background-color:#484848;
+    font-family: 'Existence Light', arial;
+    border: 1px solid #F1CA3A;
+    border-radius: 5px;
+}
+.my-modal h2, .my-modal h3 {
+    color: #ffffff;
+}
+.my-modal h1 {
+    color: #F1CA3A;
 }
