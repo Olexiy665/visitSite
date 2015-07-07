@@ -1,13 +1,34 @@
 
     <div ng-repeat="skill in skills"
+
          when-visible="animateElementIn"
          when-not-visible="animateElementOut"
          delay-percent="0.50"
-         class="hidden" class="medium-12 columns large-12 columns small-12 columns">
+         class="hidden">
         <div class="skill" >
-
-           <div class="medium-3 columns large-3 columns small-3 columns"> <img ng-src="{{skill.imgUrl}}"></div>
+            <div >
+           <div class="medium-3 columns large-3 large-3 columns small-3 columns"> <img ng-src="{{skill.imgUrl}}"></div>
+            <div class="medium-9 columns large-6 x-large-6 columns small-9  columns">
             <h1>{{skill.name}}</h1>
+            </div>
+                <div class="row">
+            <div ng-controller="HideController" >
+                <a class="large-3 x-large-3 columns  show-for-large-up right  button know-div" ng-show="showButton" ng-click="showDescrip = !showDescrip; showButton = !showButton"  when-visible="animateKnowDivIn"
+                   when-not-visible="animateKnowDivIn"  ><h3>Knowledge level</h3></a>
+                <a class="large-3 x-large-3 columns show-for-large-up right  button know-div" ng-show="showDescrip"  ng-click="showButton = !showButton; showDescrip = !showDescrip"  when-visible="animateKnowDivIn"
+                   when-not-visible="animateKnowDivIn"   ><p>{{skill.knowledgeLevel}}</p></a>
+                <a class=" medium-8 columns  right show-for-medium button know-div" ng-show="showButton" ng-click="showDescrip = !showDescrip; showButton = !showButton" when-visible="animateKnowDivIn"
+                   when-not-visible="animateKnowDivIn"  ><h3>Knowledge level</h3></a>
+                <a class=" medium-8 columns right  show-for-medium button know-div" ng-show="showDescrip"  ng-click="showButton = !showButton; showDescrip = !showDescrip" when-visible="animateKnowDivIn"
+                   when-not-visible="animateKnowDivIn"  ><p>{{skill.knowledgeLevel}}</p></a>
+                <a class="small-8 columns right show-for-small  button know-div" ng-show="showButton" ng-click="showDescrip = !showDescrip; showButton = !showButton" when-visible="animateKnowDivIn"
+                   when-not-visible="animateKnowDivIn"   ><h3>Knowledge</h3></a>
+                <a class="small-8 columns right  show-for-small button know-div" ng-show="showDescrip"  ng-click="showButton = !showButton; showDescrip = !showDescrip" when-visible="animateKnowDivIn"
+                   when-not-visible="animateKnowDivIn"  ><p>{{skill.knowledgeLevel}}</p></a>
+            </div>
+                    </div>
+            </div>
+
 
         </div>
     </div>

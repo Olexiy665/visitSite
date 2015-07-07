@@ -1,0 +1,21 @@
+<div class="row" ng-controller="EducationalController">
+    <div class="large-12 columns place show-for-medium-up">
+        <div class="row">
+            <div ng-show="showLyceum" when-visible="changeAnimation"
+                 when-not-visible="changeAnimation"  >
+        <div class="large-6 columns ed-head"><h1>{{lyceum.name}}</h1></div>
+        <img  ng-src="{{lyceum.image}}">
+            </div>
+            <div ng-show="showKpi" when-visible="changeAnimation"
+                 when-not-visible="changeAnimation"  >
+                <div class="large-6 columns ed-head"><h1>{{kpi.name}}</h1></div>
+                <img  ng-src="{{kpi.image}}">
+            </div>
+            <ul class="button-group year-button-group">
+                <li  class=" button year-button" ng-click=" showKpi = false; showLyceum = true; ">2010-2012</li>
+                <li ng-click="showKpi= true; showLyceum = false" class="button year-button">2013-present</li>
+            </ul>
+        </div>
+
+    </div>
+</div>

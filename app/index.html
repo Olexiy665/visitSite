@@ -21,7 +21,7 @@
 <body id="body" ng-app="mainApp">
 
 
-<div class="medium-12 columns large-12 columns small-12 columns" id="header">
+<div class="medium-12 columns large-12 xlarge-12 columns small-12 columns" id="header">
 
 
   <div  class="large-6 columns medium-6 columns" id="logo" >
@@ -33,7 +33,7 @@
      <h1 class="headWords"><span class="firstLetter"> W</span>eb  <span class="firstLetter"> D</span>eveloper</h1>
      <h2 class="headWords"><span class="firstLetter">F</span>ront-end</h2>
   </div>
-  <div  class="large-2 columns medium-2  columns show-for-large-up" >
+  <div  class="large-2 xlarge-2 columns medium-2  columns show-for-large-up" >
    <h1> <img id="my-foto" src="pictures/my-foto.png"> </h1>
   </div>
 
@@ -41,8 +41,8 @@
 
 </div>
 
-
-<div ng-controller="HighLightController"  class="large-3 columns medium-3 columns show-for-medium-up " >
+<div class="my-body">
+<div ng-controller="HighLightController"  class="large-3 xlarge-3 columns medium-3 columns show-for-medium-up " >
   <ul class="side-nav">
       <li><a angular-ripple class="button mNavButton" href="#/home" ng-class="{'active-tab': $route.current.activePage == 'home'}" >Personal info</a></li>
       <li><a angular-ripple class="button mNavButton"  href="#/education"  ng-class="{'active-tab': $route.current.activePage == 'education'}" >Education</a></li>
@@ -53,7 +53,7 @@
 
 
 
-<div class="large-9 columns medium-9 columns">
+<div class="large-9  xlarge-9 columns medium-9 columns">
 <ng-view></ng-view>
 
   </div>
@@ -66,6 +66,6 @@
   <script src="bower_components/angular-ripple/angular-ripple.js"></script>
  <script src="bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
 
-
+</div>
 </body>
 </html>
