@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-var app = angular.module("mainApp", ['ngRoute','angular-scroll-animate', 'angularRipple']);
+var app = angular.module("mainApp", ['ngRoute', 'angularRipple','angular-scroll-animate']);
 app.controller("HighLightController", function($scope, $route){
     $scope.$route = $route;
 
@@ -29,6 +29,9 @@ app.config(function($routeProvider){
         redirectTo:'/home'
       });
 });
+app.controller('mobileHighLightController', function($scope, $route){
+    $scope.$route = $route;
+})
 app.controller('EducationalController', function($scope){
     $scope.showLyceum = true;
     $scope.showKpi = false;
